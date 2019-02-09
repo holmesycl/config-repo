@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    platform: mysql
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://holmesycl.com:3306/cloud
+    username: root
+    password: 123456
+    tomcat:
+      test-while-idle: true
+      validation-query: SELECT 1
+  jpa:
+    database: mysql
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
