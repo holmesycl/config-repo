@@ -1,3 +1,5 @@
+example:
+  property: yecl-exampe-property
 spring:
   datasource:
     platform: mysql
