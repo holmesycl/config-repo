@@ -6,7 +6,7 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://holmesycl.com:3306/cloud
     username: root
-    password: 123456
+    password: {cipher}80566a02ea86a162483166e1c9ee8f526bf7fa67a53f707992d4759cf40da4c8
     tomcat:
       test-while-idle: true
       validation-query: SELECT 1
@@ -16,5 +16,3 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
-encrypt:
-  key: IMSYMMETRIC
