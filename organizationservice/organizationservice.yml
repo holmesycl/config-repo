@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    platform: mysql
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://holmesycl.com:3306/cloud
+    username: root
+    password: "{cipher}80566a02ea86a162483166e1c9ee8f526bf7fa67a53f707992d4759cf40da4c8"
+    tomcat:
+      test-while-idle: true
+      validation-query: SELECT 1
+  jpa:
+    database: mysql
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url: http://localhost:8761/eureka
