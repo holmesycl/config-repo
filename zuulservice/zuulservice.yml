@@ -22,3 +22,6 @@ eureka:
 #  routes:
 #    organizationservice: /organization/**
 #    licensingservice: /licensing/**
+management:
+  security:
+    enabled: false
