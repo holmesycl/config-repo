@@ -1,5 +1,5 @@
 app:
-  refresh: refresh--0
+  refresh: refresh
     
 server:
   port: 0
